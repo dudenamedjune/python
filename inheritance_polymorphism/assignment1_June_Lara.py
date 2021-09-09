@@ -12,8 +12,8 @@ def main():
 
     for employee in employees_list:
         table.add_row([employee, employee.get_name(), employee.get_department(), "${:,.2f}".format(employee.pay())])
+        
     print(table)
-
     print("Total pay for all employees:", "${:,.2f}".format(sum(employee.pay() for employee in employees_list)))
     
 main()
